@@ -3,13 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vicente González</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>PP.E.I. Presentación 01</title>
 <style>
     body {
-        background-color: rgb(0,0,0);
+        background-color: rgb(0, 0, 0);
         margin: 0;
         padding: 0;
+        position: relative;
     }
+
     #image-slider {
         width: 100%;
         display: flex;
@@ -18,12 +21,29 @@
 
     img {
         width: auto;
-        height: 100vh;
+        max-height: 100vh;
         display: none;
+    }
+
+    #buttons-container {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    button {
+            background-color: white;
+        color: black;
+        padding: 10px;
+        border: none;
+        margin-left: 5px;
+        cursor: pointer;
+        width: 100px; /* Fixed width */
     }
 </style>
 </head>
 <body>
+
 <div id="image-slider">
     <img src="images/out-1.png">
     <img src="images/out-2.png">
@@ -32,6 +52,11 @@
     <img src="images/out-5.png">
     <img src="images/out-6.png">
     <img src="images/out-7.png">
+</div>
+
+<div id="buttons-container">
+    <button id="prev-button"><i class="fas fa-arrow-left"></i></button>
+    <button id="next-button"><i class="fas fa-arrow-right"></i></button>
 </div>
 
 <script>
@@ -48,6 +73,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    document.getElementById('prev-button').addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    });
+
+    document.getElementById('next-button').addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    });
 
     document.addEventListener('keydown', function(event) {
         if (event.key === 'ArrowLeft') {
@@ -66,5 +101,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
-
 
