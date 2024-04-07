@@ -1,23 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded PDF</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-        }
-        embed {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vicente González</title>
+<style>
+    body {
+        background-color: rgb(0,0,0);
+        margin: 0;
+        padding: 0;
+    }
+    #image-slider {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        width: auto;
+        height: 100vh;
+        display: none;
+    }
+</style>
 </head>
 <body>
-    <embed src="template.pdf" type="application/pdf" />
+<div id="image-slider">
+    <img src="images/out-1.png">
+    <img src="images/out-2.png">
+    <img src="images/out-3.png">
+    <img src="images/out-4.png">
+    <img src="images/out-5.png">
+    <img src="images/out-6.png">
+    <img src="images/out-7.png">
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('#image-slider img');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach((image, i) => {
+            if (i === index) {
+                image.style.display = 'block';
+            } else {
+                image.style.display = 'none';
+            }
+        });
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowLeft') {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        } else if (event.key === 'ArrowRight') {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }
+    });
+
+    // Show the first image initially
+    showImage(currentIndex);
+});
+</script>
+
 </body>
 </html>
+
+
