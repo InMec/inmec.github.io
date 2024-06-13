@@ -25,6 +25,7 @@ Javascrip
 <!-- Nav -->
 <nav id="nav">
 <a onclick="scrollToSection('home')" class="icon solid fa-address-card"></a>
+<a onclick="scrollToSection('videos')" class="icon solid fa-play"></a>
 <a onclick="scrollToSection('work')" class="icon solid fa-camera"></a>
 <a onclick="scrollToSection('contact')" class="icon solid fa-comment"></a>
 </nav>
@@ -50,30 +51,37 @@ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
 luctus elit eget interdum.
 </p>
 </header>
+</section>
+
+<!-- Videos -->
+<section id="videos" class="panel" >
+<div class="image-container">
+
+<video id="video" class="img-fluid-vid" controls>
+<source src="images/ArrastreVideo05.mp4" type="video/mp4">
+Your browser does not support the video</video>
+    <!-- <div class="playButton" onclick="playPause()"></div> -->
+
+<video id="video" class="img-fluid-vid-por" controls>
+<source src="images/mili.mp4" type="video/mp4">
+Your browser does not support the video</video>
+
+<video id="video" class="img-fluid-vid-por" controls>
+<source src="images/mili.mp4" type="video/mp4">
+Your browser does not support the video</video>
+    <!-- <div class="playButton" onclick="playPause()"></div> -->
 
 </section>
 
 <!-- Work -->
-<section id="work" class="panel" style="background:#2C2834;">
-
-
+<section id="work" class="panel" >
 <div class="image-container">
-<div class="img-fluid-vid">
-    <video id="video" controls>
-<source src="images/ArrastreVideo05.mp4" type="video/mp4">
-Your browser does not support the video</video>
- <div class="playButton" onclick="playPause()"></div>
-  
-</div>
-
 <img src="images/out-05.jpg" class="img-fluid-por">
 <img src="images/out-04.jpg" class="img-fluid-por">
 <img src="images/out-01.jpg" class="img-fluid">
 <img src="images/out-02.jpg" class="img-fluid">
 <img src="images/out-03.jpg" class="img-fluid">
 </div>
-
-<footer></footer>
 
 </section>
 <!-- Contact -->
@@ -130,6 +138,7 @@ document.oncontextmenu=new Function("return false")
 // -->    
 </script>
 
+<!-- 
 <script>
 var Video = document.getElementById("video");
 var PlayButton = document.getElementsByClassName("playButton")[0]; // Assuming there's only one play button
@@ -150,5 +159,4 @@ Video.addEventListener('pause', function() {
     PlayButton.style.opacity = '1'; // Make play button visible
 });    
 </script>
-<!-- 
     Scripts -->

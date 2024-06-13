@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("fontawesome-all.min.css");
 
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, i, article, header, nav, section, video {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, i, article, header, nav, section, video 
+{
 margin: 0;
 padding: 0;
 border: 0;
@@ -9,30 +10,43 @@ font-size: 100%;
 font: inherit;
 vertical-align: baseline;
 }
-article, figure ,header, nav, section {
+
+article, figure ,header, nav, section 
+{
 display: block;
 }
-footer {
+
+footer 
+{
 width:100%;
 background-color:#282C34;
 min-height: calc( 40px + 6vw );
 }
-body {
+
+body 
+{
 -webkit-text-size-adjust: none;
 }
 
 /* Basic */
-html {
+html 
+{
 box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*, *:before, *:after 
+{
 box-sizing: inherit;
 }
-body {
+
+body 
+{
 background-color:#2C2834;
 overflow-y: scroll;
 }
-body, input, textarea, select {
+
+body, input, textarea, select 
+{
 font-family: 'Source Sans Pro', sans-serif;
 font-weight: 300;
 color: #ffffff;
@@ -40,106 +54,152 @@ font-size: 15pt;
 line-height: 1.5em;
 }
 
-strong, b, h1, h2, h3, h4, h5, h6 {
+strong, b, h1, h2, h3, h4, h5, h6 
+{
 font-weight: 400;
 }
-h1 {
+
+h1 
+{
 font-size: 2.4em;
 letter-spacing: -0.015em;
 }
-h2 {
+
+h2 
+{
 font-size: 1.8em;
 letter-spacing: -0.015em;
 }
-h3, h4, h5, h6 {
+
+h3, h4, h5, h6 
+{
 font-size: 1.25em;
 letter-spacing: -0.015em;
 }
-p {
+
+p 
+{
 margin-bottom: 2em;
 }
 
 /* Section/Article */
 
-section, article {
-margin-bottom: 3em;
+section, article 
+{
+margin: 0 0 0 0;
 }
-section > :last-child, section:last-child, article > :last-child, article:last-child {
-margin-bottom: 0;
-}
-header {
+
+header 
+{
 margin: 0 0 1.5em 0;
 }
-header > p {
+
+header > p 
+{
 margin: 0.5em 0 0 0;
 font-weight: 400;
 }
 
 /* Image */
-.image-container {
+.image-container 
+{
 display: flex;
 justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
 }
-.img-fluid-por{       
+
+.img-fluid-por
+{       
 width: 49%;
 height: auto;
 margin-top: 2vw;
 }
-.img-fluid{
+
+.img-fluid
+{
 width: 100%;  
 height: auto;   
 margin-top: 2vw;
 }
-.img-fluid-vid{
+
+.img-fluid-vid-por
+{
+width: 49%;  
+height: auto;   
+margin-top: 2vw;
+display:table;
+position:relative;
+}
+
+.img-fluid-vid
+{
 width: 100%;  
 height: auto;   
 margin-top: 2vw;
- display:table;
-    position:relative;
+display:table;
+position:relative;
 }
 
 .image {
 display: inline-block;
 }
-.image img {
+
+.image img 
+{
 display: block;
 width: 100%;
 }
-.image.fit {
+
+.image.fit 
+{
 display: block;
 width: 100%;
 }
-.image.fit.por {
+
+.image.fit.por
+{
 display: block;
 width: 49%;
 }
-.image.featured {
+
+.image.featured
+{
 display: block;
 width: 100%;
 margin: 0 0 2em 0;
 }
-.image.left {
+
+.image.left 
+{
 float: left;
 margin: 0 2em 2em 0;
 }
-.image.centered {
+
+.image.centered 
+{
 display: block;
 margin: 0 0 2em 0;
 }
-.image.centered img {
+
+.image.centered img 
+{
 margin: 0 auto;
 width: auto;
+}
+
+.img-fluid-vid-por video {
+  width: 49%;
 }
 
 .img-fluid-vid video {
   width: 100%;
 }
 
-/*It works*/
+/*It works, but nah bro*/
 
-.playButton{
+.playButton
+{
     content: "";
     display: block;
     width: 0;
@@ -154,16 +214,17 @@ width: auto;
     bottom:0;
     margin: auto;
 }
+
 /* Icons */
 
-.icon {
+.icon 
+{
 text-decoration: none;
 position: relative;
 text-decoration: none;
 }
+
 .icon:before {
--moz-osx-font-smoothing: grayscale;
--webkit-font-smoothing: antialiased;
 display: inline-block;
 font-style: normal;
 font-variant: normal;
@@ -173,21 +234,26 @@ text-transform: none !important;
 font-family: 'Font Awesome 5 Free';
 font-weight: 400;
 }
+
 .icon.solid:before {
 font-weight: 900;
 }
+
 .icon.brands:before {
 font-family: 'Font Awesome 5 Brands';
 }
+
 .icon:before {
 line-height: inherit;
 }
+
 .icon > .label {
 display: none;
 }
 
 /* Nav */
-#nav {
+#nav 
+{
 display: flex;
 width:calc(50% - 25em); 
 max-width:50%; 
@@ -207,7 +273,9 @@ padding-right: 2em;
 bottom: 0;
 z-index: 9999;
 }
-#nav a {
+
+#nav a 
+{
 position: relative;
 display: inline-block;
 width: 1em;
@@ -219,30 +287,35 @@ opacity: 0.35;
 outline: 0;
 font-size:4em;
 }
-#nav a.icon:before {
+
+#nav a.icon:before 
+{
 padding-right: 0;
 }
-#nav a:hover {
+
+#nav a:hover 
+{
 opacity: 1.0;
 }
-#nav a.active {
+
+#nav a.active
+{
 opacity: 1.0;
 }
-#nav a.active:after {
+
+#nav a.active:after 
+{
 border-bottom-width: 0.5em;
 }
 
 /* Wrapper */
 
-#wrapper {
+#wrapper 
+{
 width: 46em;
 margin: 0 auto;
-min-height: 100vh;
 max-width: 100%;
 padding: 0 0;
-display: -moz-flex;
-display: -webkit-flex;
-display: -ms-flex;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -250,16 +323,18 @@ justify-content: center;
 transition: opacity 1s ease-in-out;
 }
 
-
 /* Main */
 
-#main {
+#main
+{
 position: relative;
 overflow: hidden;
 width: 100%;
 transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 }
-#main > .panel {
+
+#main > .panel 
+{
 transition: opacity 0.25s ease-in-out;
 margin-bottom: 0;
 position: relative;
@@ -267,21 +342,18 @@ padding: 3.5em 2.5em 2.5em 2.5em;
 padding: 0 0 0 0;
 width: 100%;
 }
-#main > .panel.inactive {
-opacity: 0;
-}
 
-#main > .panel.intro {
-padding: 0;
+#main > .panel.intro 
+{
+padding-top: 2vw;
 height: 30em;
-display: -moz-flex;
-display: -webkit-flex;
-display: -ms-flex;
 display: flex;
 flex-direction: row;
 align-items: center;
 }
-#main > .panel.intro .pic {
+
+#main > .panel.intro .pic 
+{
 text-decoration: none;
 position: relative;
 flex-grow: 0;
@@ -289,7 +361,9 @@ flex-shrink: 0;
 width: calc(30em * 2 / 3);
 height: 100%;
 }
-#main > .panel.intro .pic:before {
+
+#main > .panel.intro .pic:before 
+{
 content: '';
 position: absolute;
 top: 0;
@@ -298,7 +372,9 @@ width: 100%;
 height: 100%;
 z-index: 1;
 }
-#main > .panel.intro .pic img {
+
+#main > .panel.intro .pic img 
+{
 position: relative;
 display: block;
 position: absolute;
@@ -308,7 +384,9 @@ width: 100%;
 object-fit: cover;
 object-position: center;
 }
-#main > .panel.intro header {
+
+#main > .panel.intro header
+{
 vertical-align: top;
 flex-grow: 1;
 flex-shrink: 1;
@@ -317,12 +395,14 @@ margin-bottom: 0;
 width: 100%;
 }
 
-#main > .panel.intro header h1 {
+#main > .panel.intro header h1 
+{
 line-height: 1.25em;
 margin-bottom: 0;
 }
 
-#main > .panel.intro header p {
+#main > .panel.intro header p 
+{
 letter-spacing: -0.015em;
 font-size: 1.25em;
 margin: 0.25em 0 0 0;
