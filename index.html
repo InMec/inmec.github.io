@@ -38,13 +38,25 @@ Javascrip
 
 <!-- Me -->
 <div class="section-title posfixed">
-<h1>  Vicente González </h1>
-<a href="https://api.whatsapp.com/send?phone=56997714081">
-<i class="fa fa-whatsapp"></i> +56 9 9771 4081</a>
-
+<h1 onclick="scrollToSection('home')">Vicente González</h1>
 </div>
-<section id="home" class="panel intro" >
-<a class="pic"><img src="images/out-05.jpg" /></a>
+
+<div class="section-title-fixed oone">
+<a href="https://api.whatsapp.com/send?phone=56997714081">
+    <i class="fa fa-whatsapp"></i> +56 9 9771 4081</a> 
+</div>
+<div class="section-title-fixed ttwo"><h1> Videos </h1></div>
+<div class="section-title-fixed tthree"><h1> Fotos </h1></div>
+<div class="section-title-fixed ffour"><h1> Estudios </h1></div>
+
+
+
+<div id="home" class="section-title sub one">
+<a href="https://api.whatsapp.com/send?phone=56997714081">
+    <i class="fa fa-whatsapp"></i> +56 9 9771 4081</a> 
+</div>
+<section class="panel intro" >
+<img class="pic" src="images/out-05.jpg" /></a>
 <header>
 <h1>  Ingeniero mecánico </h1>
 <p>
@@ -60,8 +72,8 @@ Actualmente, busco en libros cómo bombear agua fuera de las minas, cómo manten
 </section>
 
 <!-- Videos -->
-<div class="section-title"><h1> Videos </h1></div>
-<section id="videos" class="panel" >
+<div id="videos" class="section-title sub two"><h1> Videos </h1></div>
+<section class="panel" >
 
 <div class="image-container">
 
@@ -75,8 +87,8 @@ Your browser does not support the video</video>
 </section>
 
 <!-- Work -->
-<div class="section-title"><h1> Fotos </h1></div>
-<section id="work" class="panel">
+<div id="work" class="section-title sub three"><h1> Fotos </h1></div>
+<section class="panel">
 
 
 <div class="image-container">
@@ -90,8 +102,8 @@ Your browser does not support the video</video>
 
 </section>
 <!-- Contact -->
-<div class="section-title"><h1> Estudios </h1></div>
-<section id="contact" class="panel" style="height: 88vh;">
+<div id="contact" class="section-title sub four"><h1> Estudios </h1></div>
+<section class="panel" style="height: 100vh;">
 <h2>Ingeniería Civil Mecánica</h2>
 <h3>Universidad de La Serena</h3>
 <p>
@@ -100,23 +112,56 @@ Universidad donde me enseñaron fundamentos de la ingeniería civil, elaboració
 
 </section>
 
-<div class="section-title">
+<div class="section-title sub">
 <h1>Hecho para L.C.</h1>
 </div>
 
 </div>
 
 </div>
+<script>
+window.onscroll = function() {
+  stickyFunction(blockOne, 'sticky',positionOne);
+  stickyFunction(blockTwo, 'sticky',positionTwo);
+  stickyFunction(blockThree, 'sticky',positionThree);
+  stickyFunction(blockFour, 'sticky',positionFour);
+};
+
+var blockOne = document.querySelector('.section-title-fixed.oone');
+var positionOne = document.querySelector('.section-title.sub.one');
+
+var blockTwo = document.querySelector('.section-title-fixed.ttwo');
+var positionTwo = document.querySelector('.section-title.sub.two');
+
+var blockThree = document.querySelector('.section-title-fixed.tthree');
+var positionThree = document.querySelector('.section-title.sub.three');
+
+var blockFour = document.querySelector('.section-title-fixed.ffour');
+var positionFour = document.querySelector('.section-title.sub.four');
+
+function stickyFunction(element, className, pospos) {
+    var stickyTop = pospos.offsetTop;
+  if (window.pageYOffset + 100 > stickyTop) {
+    element.classList.add(className);
+  } else {
+    element.classList.remove(className);
+  }
+}
+
+</script>
+
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
 <script src="assets/js/breakpoints.min.js"></script>
+
 <script>
   function scrollToSection(sectionId) {
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
   }
 </script>
+
 <script>
 <!--
 var mensagem="";
@@ -131,25 +176,3 @@ document.oncontextmenu=new Function("return false")
 // -->    
 </script>
 
-<!-- 
-<script>
-var Video = document.getElementById("video");
-var PlayButton = document.getElementsByClassName("playButton")[0]; // Assuming there's only one play button
-
-function playPause() { 
-    if (Video.paused) {
-        Video.play();     
-    } else {                                                                      
-        Video.pause();     
-    }                                                         
-}
-
-Video.addEventListener('play', function() {
-    PlayButton.style.opacity = '0'; // Make play button transparent
-});
-
-Video.addEventListener('pause', function() {
-    PlayButton.style.opacity = '1'; // Make play button visible
-});    
-</script>
-    Scripts -->
