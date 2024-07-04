@@ -45,18 +45,15 @@ Javascrip
 <a href="https://api.whatsapp.com/send?phone=56997714081">
     <i class="fa fa-whatsapp"></i> +56 9 9771 4081</a> 
 </div>
-<div class="section-title-fixed ttwo"><h1> Videos </h1></div>
-<div class="section-title-fixed tthree"><h1> Fotos </h1></div>
-<div class="section-title-fixed ffour"><h1> Estudios </h1></div>
+<div class="section-title-fixed ttwo"><h1>Videos</h1></div>
+<div class="section-title-fixed tthree"><h1>Fotos</h1></div>
+<div class="section-title-fixed ffour"><h1>Estudios</h1></div>
 
 
 
-<div id="home" class="section-title sub one">
-<a href="https://api.whatsapp.com/send?phone=56997714081">
-    <i class="fa fa-whatsapp"></i> +56 9 9771 4081</a> 
-</div>
+<div id="home" class="section-title sub one"></div>
 <section class="panel intro" >
-<img class="pic" src="images/out-05.jpg" /></a>
+<img class="pic" src="images/out-05.webp" /></a>
 <header>
 <h1>  Ingeniero mecánico </h1>
 <p>
@@ -72,37 +69,34 @@ Actualmente, busco en libros cómo bombear agua fuera de las minas, cómo manten
 </section>
 
 <!-- Videos -->
-<div id="videos" class="section-title sub two"><h1> Videos </h1></div>
+<div id="videos" class="section-title sub two"><h1>Videos</h1></div>
 <section class="panel" >
 
 <div class="image-container">
 
 <video id="video" class="img-fluid-vid" controls>
-<source src="images/ArrastreVideo05.mp4" type="video/mp4">
+<source src="images/ArrastreVideo05.webm" type="video/mp4">
 Your browser does not support the video</video>
 
 <video id="video" class="img-fluid-vid-por" controls>
-<source src="images/mili.mp4" type="video/mp4">
+<source src="images/mili.webm" type="video/mp4">
 Your browser does not support the video</video>
 </section>
 
 <!-- Work -->
-<div id="work" class="section-title sub three"><h1> Fotos </h1></div>
+<div id="work" class="section-title sub three"><h1>Fotos</h1></div>
 <section class="panel">
 
 
 <div class="image-container">
-<img src="images/out-05.jpg" class="img-fluid-por">
-<img src="images/out-04.jpg" class="img-fluid-por">
-<img src="images/out-01.jpg" class="img-fluid">
-<img src="images/out-02.jpg" class="img-fluid">
-<img src="images/out-03.jpg" class="img-fluid">
-<img src="images/out-04.jpg" class="img-fluid-por">
+<img src="images/out-01.webp" class="img-fluid">
+<img src="images/out-02.webp" class="img-fluid">
+<img src="images/out-03.webp" class="img-fluid">
 </div>
 
 </section>
 <!-- Contact -->
-<div id="contact" class="section-title sub four"><h1> Estudios </h1></div>
+<div id="contact" class="section-title sub four"><h1>Estudios</h1></div>
 <section class="panel" style="height: 100vh;">
 <h2>Ingeniería Civil Mecánica</h2>
 <h3>Universidad de La Serena</h3>
@@ -121,14 +115,13 @@ Universidad donde me enseñaron fundamentos de la ingeniería civil, elaboració
 </div>
 <script>
 window.onscroll = function() {
-  stickyFunction(blockOne, 'sticky',positionOne);
+  stickyFunction(blockOne, 'stickyIndex',positionTwo);
   stickyFunction(blockTwo, 'sticky',positionTwo);
   stickyFunction(blockThree, 'sticky',positionThree);
   stickyFunction(blockFour, 'sticky',positionFour);
 };
 
 var blockOne = document.querySelector('.section-title-fixed.oone');
-var positionOne = document.querySelector('.section-title.sub.one');
 
 var blockTwo = document.querySelector('.section-title-fixed.ttwo');
 var positionTwo = document.querySelector('.section-title.sub.two');
@@ -147,6 +140,7 @@ function stickyFunction(element, className, pospos) {
     element.classList.remove(className);
   }
 }
+
 
 </script>
 
