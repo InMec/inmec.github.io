@@ -1,81 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Vicente González Bugueño</title>
-<style>
-    body {
-        background-color: #EFEFEF;
-        margin: 0em;
-        padding: 5em;
-        position: relative;
-        background-size: cover;
-background-repeat: no-repeat;
-    }
+    <meta charset="UTF-8">
+    <title>Vicente González Bugueño</title>
+    <style>
+        body {
+            background-color: #EFEFEF;
+            margin: 0em;
+            padding: 5em;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack items vertically */
+            align-items: flex-start; /* Align items to the left */
+        }
 
-    #buttons-container {
-        width: 100%;
-        align: space-between;
-    }
+        #buttons-container {
+            display: flex; /* Flexbox for buttons container */
+            align-items: center; /* Center buttons vertically */
+            margin-left: 2em; /* Space between h1 and buttons */
+        }
 
-    button {
-        background-color: #FF5200;
-        font-size:2em;
-        padding: 10px;
-        border: 1em;
-        margin: 1em 1em 1em 1em;
-        cursor: pointer;
-        width: 15em;
-font-weight: bold; 
-    }
+        button {
+            background-color: #FF5200;
+            font-size: 2em;
+            padding: 0.5em;
+            border: none; /* Remove default border */
+            margin: 1em; /* Maintain existing margin */
+            cursor: pointer;
+            width: 15em;
+            font-weight: bold; 
+        }
 
-    h1 {font-size:3em;color:#404040;}
-</style>
+        h1 {
+            font-size: 3em;
+            color: #404040;
+            margin: 0; /* Remove default margin */
+        }
+
+    </style>
 </head>
 <body>
-<!--
-<h1 id="text"> Ejemplo 1 + Programas requeridos</h1>
+
+
 <div id="buttons-container">
-  <a href="files/conector.stl" download><button id="down-button">Ejemplo 1: conector.stl</button></a>  
- <a href="https://sourceforge.net/projects/pycam/files/pycam/0.5.1/" ><button id="down-button">pyCAM</button></a> 
- <a href="https://camotics.org/download.html" > <button id="down-button">Camotics</button></a>  
-</div>
-<h1 id="text"> Ejemplo 2 + Programas requeridos</h1>
-<a href="files/silla.dxf" download><button id="down-button">Ejemplo 2: silla.dxf</button></a>  
-<a href="https://www.freecad.org/downloads.php" ><button id="down-button">FreeCAD</button></a>  
-</div>
--->
 <h1 id="text">2024-09-11</h1>
-<div id="buttons-container">
-<a href="presentation/index.html">
-<button id="down-button">Avance de Tesis</button>
-</a>  
+    <a href="presentation/index.html">
+        <button id="down-button">Avance de Tesis</button>
+    </a>  
 </div>
 
+<div id="buttons-container">
 <h1 id="text">2024-09-23</h1>
-<div id="buttons-container">
-<a href="presentation3/index.html">
-<button id="down-button">Emprendimiento</button>
-</a>  
+    <a href="presentation3/index.html">
+        <button id="down-button2">Emprendimiento</button>
+    </a>  
 </div>
 
-<h1 id="text">2024-09-24</h1>
+
 <div id="buttons-container">
+<h1 id="text">2024-09-24</h1>
 <a href="presentation2/index.html">
 <button id="down-button">Demolición</button>
 </a>  
 </div>
 
-<h1 id="text">2024-10-14</h1>
 <div id="buttons-container">
+<h1 id="text">2024-10-14</h1>
 <a href="presentation4/index.html">
 <button id="down-button">Hidrogeno</button>
 </a>  
 </div>
 
-<h1 id="text">2024-10-15</h1>
 <div id="buttons-container">
+<h1 id="text">2024-10-15</h1>
 <a href="presentation5/index.html">
 <button id="down-button">Matriz</button>
 </a>  
@@ -84,4 +83,3 @@ font-weight: bold;
 
 </body>
 </html>
-
