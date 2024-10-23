@@ -6,16 +6,16 @@
     <style>
         body {
             background-color: #EFEFEF;
-            margin: 0em;
-            padding: 5em;
             position: relative;
-            background-size: cover;
-            background-repeat: no-repeat;
+            display: flex; /* Use flexbox for layout */
+        }
+        #pres {
+            margin: 0em;
+            padding: 5em 5em 5em 5em;
             display: flex; /* Use flexbox for layout */
             flex-direction: column; /* Stack items vertically */
             align-items: flex-start; /* Align items to the left */
         }
-
         #buttons-container {
             display: flex; /* Flexbox for buttons container */
             align-items: center; /* Center buttons vertically */
@@ -39,47 +39,89 @@
             margin: 0; /* Remove default margin */
         }
 
+
+.image-grid {
+    display: flex;
+    justify-content: space-between; /* Distributes space between images */
+    flex-wrap: wrap; /* Allows images to wrap to the next line */
+    padding: 5em 5em 5em 5em;
+}
+
+.image-grid img {
+    width: 10vw; /* Adjust this value based on how many images you want per row */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 5px; /* Adds spacing around each image */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.image-grid img:hover {
+    transform: scale(2); /* Slight zoom on hover */
+}
+
     </style>
 </head>
 <body>
 
 
-<div id="buttons-container">
-<h1 id="text">2024-09-11</h1>
-    <a href="presentation/index.html">
-        <button id="down-button">Avance de Tesis</button>
-    </a>  
+<div id="pres">
+<div id="buttons-container"><h1 id="text">2024-09-11</h1><a href="presentation/index.html"><button id="down-button">Avance de Tesis</button></a></div>
+<div id="buttons-container"><h1 id="text">2024-09-23</h1><a href="presentation3/index.html"><button id="down-button">Emprendimiento</button></a></div>
+<div id="buttons-container"><h1 id="text">2024-09-24</h1><a href="presentation2/index.html"><button id="down-button">Demolición</button></a></div>
+<div id="buttons-container"><h1 id="text">2024-10-14</h1><a href="presentation4/index.html"><button id="down-button">Hidrogeno</button></a></div>
+<div id="buttons-container"><h1 id="text">2024-10-15</h1><a href="presentation5/index.html"><button id="down-button">Matriz</button></a></div>
 </div>
 
-<div id="buttons-container">
-<h1 id="text">2024-09-23</h1>
-    <a href="presentation3/index.html">
-        <button id="down-button2">Emprendimiento</button>
-    </a>  
+  <div class="image-grid">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
+    <img src="bongo-cat-transparent.gif">
 </div>
-
-
-<div id="buttons-container">
-<h1 id="text">2024-09-24</h1>
-<a href="presentation2/index.html">
-<button id="down-button">Demolición</button>
-</a>  
-</div>
-
-<div id="buttons-container">
-<h1 id="text">2024-10-14</h1>
-<a href="presentation4/index.html">
-<button id="down-button">Hidrogeno</button>
-</a>  
-</div>
-
-<div id="buttons-container">
-<h1 id="text">2024-10-15</h1>
-<a href="presentation5/index.html">
-<button id="down-button">Matriz</button>
-</a>  
-</div>
-
-
 </body>
 </html>
