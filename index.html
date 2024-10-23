@@ -7,74 +7,68 @@
         body {
             background-color: #EFEFEF;
             position: relative;
-            display: flex; /* Use flexbox for layout */
-            flex-direction: column; /* Stack items vertically */
+            display: flex; 
+            flex-direction: column;
         }
         #pres {
             width:100vw;
             margin: 0em;
             margin-top: 2vw;
-            display: flex; /* Use flexbox for layout */
-            flex-direction: column; /* Stack items vertically */
-            align-items: flex-start; /* Align items to the left */
+            display: flex; 
+            flex-direction: column; 
+            align-items: flex-start; 
         }
         #buttons-container {
-            display: flex; /* Flexbox for buttons container */
-            align-items: center; /* Center buttons vertically */
+            display: flex; 
+            align-items: center; 
         }
-
         button {
             background-color: #FF5200;
             font-size: 4vw;
             padding: 2vw;
-            border: none; /* Remove default border */
-            margin-bottom: 4vw; /* Maintain existing margin */
-            margin-top: 4vw; /* Maintain existing margin */
-            padding-left: 3vw; /* Maintain existing margin */
+            border: none;
+            margin-bottom: 4vw;
+            margin-top: 4vw; 
+            padding-left: 3vw; 
             cursor: pointer;
             font-weight: bold; 
             width: 60vw;
-            text-align: left; /* Align items to the left */
+            text-align: left;
         }
-
         h1 {
             width:20vw;
-            text-align: center; /* Align items to the left */
+            text-align: center;
             text-wrap: nowrap;
             font-size: 3vw;
             color: #404040;
-            margin: 0; /* Remove default margin */
+            margin: 0; 
         }
-
-
-.image-grid {
-    display: flex;
-    justify-content: space-between; /* Distributes space between images */
-    flex-wrap: wrap; /* Allows images to wrap to the next line */
-    padding: 2.5vw 2.5vw 2.5vw 2.5vw;
-}
-
-.image-grid img {
-    width: 200px; /* Adjust this value based on how many images you want per row */
-    height: auto; /* Maintains the aspect ratio */
-    margin: 5px; /* Adds spacing around each image */
-    transition: transform 0.2s; /* Smooth scaling effect */
-}
-
-.image-grid img:hover {
-    transform: scale(2); /* Slight zoom on hover */
-}
+        .image-grid {
+            display: flex;
+            justify-content: space-between; 
+            flex-wrap: wrap; 
+            padding: 2.5vw 2.5vw 2.5vw 2.5vw;
+        }
+        .image-grid img {
+            width: 200px; 
+            height: auto;
+            margin: 5px; 
+            transition: transform 0.2s; 
+        }
+        .image-grid img:hover {
+            transform: scale(2); 
+        }
 
     </style>
 </head>
-<body>
 
+<body>
 <div id="pres">
-<div id="buttons-container"><h1 id="text">2024-10-15</h1><a href="presentation5/index.html"><button id="down-button">Matriz</button></a></div>
-<div id="buttons-container"><h1 id="text">2024-10-14</h1><a href="presentation4/index.html"><button id="down-button">Hidrogeno</button></a></div>
-<div id="buttons-container"><h1 id="text">2024-09-24</h1><a href="presentation2/index.html"><button id="down-button">Demolición</button></a></div>
-<div id="buttons-container"><h1 id="text">2024-09-23</h1><a href="presentation3/index.html"><button id="down-button">Emprendimiento</button></a></div>
-<div id="buttons-container"><h1 id="text">2024-09-11</h1><a href="presentation/index.html"><button id="down-button">Avance de Tesis</button></a></div>
+<div id="buttons-container"><h1 id="text">1-</h1><a href="presentation1/index.html"><button id="down-button">Presentation1</button></a></div>
+<div id="buttons-container"><h1 id="text">2-</h1><a href="presentation2/index.html"><button id="down-button">Presentation2</button></a></div>
+<div id="buttons-container"><h1 id="text">3-</h1><a href="presentation3/index.html"><button id="down-button">Presentation3</button></a></div>
+<div id="buttons-container"><h1 id="text">4-</h1><a href="presentation4/index.html"><button id="down-button">Presentation4</button></a></div>
+<div id="buttons-container"><h1 id="text">5-</h1><a href="presentation5/index.html"><button id="down-button">Presentation5</button></a></div>
 </div>
 
   <div class="image-grid">
