@@ -92,6 +92,7 @@ font-size: 11pt;
 
 h1, h2, h3, h4, h5, h6, a, p
 {
+line-height: 1.5em;
 text-align: justify;
 color: #fff;
 }
@@ -210,7 +211,7 @@ opacity:0;
 {
 width:100vw;
 padding-left:2vw ;
-padding-right:47.75vw ;
+padding-right:47vw ;
 text-align: right;
 }
 
@@ -218,8 +219,8 @@ text-align: right;
     text-decoration: none;
     background-color: #007bff; 
     border-radius: 20px; 
-    display: inline-block; 
-    padding: 0.05em 0.4em; 
+    display: inline-block;
+    padding: 0.13em 0.4em; 
     transition: background-color 0.3s ease; 
 }
 
@@ -231,7 +232,7 @@ background-color: #0056b3; /* Darker shade or different color on hover */
 {
 width:100vw;
 padding-left:2vw ;
-padding-right:47.75vw ;
+padding-right:47vw ;
 text-align: right;
 }
 
@@ -348,7 +349,7 @@ font-weight: 900;
 {
 background-color:#FF5200; 
 width:20vw; 
-max-width:50%; 
+max-width:100%; 
 min-width:10%; 
 height:100%;
 justify-content: flex-start;
@@ -384,9 +385,9 @@ transition: opacity .25s ease-in-out;
 #nav a > p {
 text-align: left;
 font-size: 0.5em;
-padding-left:4.5vw;
+padding-left:6vw;
 font-weight: 900;
-transform: translateY(-2em);
+transform: translateY(-2.75em);
 }
 
 #nav a:hover  
@@ -542,14 +543,17 @@ width: 100%;
 
 #main > .panel.intro header h1 
 {
-line-height: 1.25em;
+font-size: 26pt;
+white-space:nowrap;
+line-height: 1.5em;
 margin-bottom: 0;
 }
 
 #main > .panel.intro header p 
 {
 letter-spacing: -0.015em;
-font-size: 1.25em;
+line-height: 1.5em;
+font-size: 13pt;
 margin: 0.25em 0 0 0;
 }
 
