@@ -395,6 +395,24 @@ transform: translateY(-2em);
 opacity: 1.0;
 }
 
+#nav a.ref0{
+opacity: 1.0;
+}
+#nav a.ref1{
+}
+#nav a.ref2{
+}
+#nav a.ref3{
+}
+
+#nav a.ref{
+    opacity:1;
+}
+
+#nav a.refIndex {
+    opacity:0.35;
+}
+
 @media screen and (max-width: 980px) {
 #nav  
 {
