@@ -219,8 +219,11 @@ text-align: right;
     text-decoration: none;
     background-color: #007bff; 
     border-radius: 20px; 
-    display: inline-block;
-    padding: 0.13em 0.4em; 
+    display: inline-flex;
+    align-items: center;
+    height: 1.25em;
+    padding-right: 0.3em;
+    padding-left: 0.3em;
     transition: background-color 0.3s ease; 
 }
 
